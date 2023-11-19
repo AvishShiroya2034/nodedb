@@ -48,7 +48,7 @@ router.put('/employees/:email',async (req,res)=>{
 router.delete('/employee/delete/:email',(req,res)=>{
     Employee.findOneAndDelete({email:req.params.email})
     .then(console.log("delete"+ req.params.email))
-    .catch((err)=>{console.log(err + "delet") });
+    .catch((err)=>{console.log(err + "delete") });
 })
 
 module.exports = router;
